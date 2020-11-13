@@ -1,6 +1,6 @@
 {
-  "name": "compone",
-  "version": "1.0.0",
+  "name": "@rich-97/compone",
+  "version": "1.0.1",
   "description": "A React.js UI library fully customizable.",
   "main": "./lib/index.js",
   "scripts": {
