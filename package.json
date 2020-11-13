@@ -1,0 +1,59 @@
+{
+  "name": "compone",
+  "version": "1.0.0",
+  "description": "A React.js UI library fully customizable.",
+  "main": "./lib/index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rich-97/compone.git"
+  },
+  "keywords": [
+    "React",
+    "Components",
+    "UI"
+  ],
+  "author": "Ricardo Moreno",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rich-97/compone/issues"
+  },
+  "homepage": "https://github.com/rich-97/compone#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.34.0",
+    "@typescript-eslint/parser": "^3.10.1",
+    "eslint": "6.8.0",
+    "eslint-config-airbnb-typescript": "8.0.2",
+    "eslint-config-prettier": "6.11.0",
+    "eslint-plugin-cypress": "2.11.1",
+    "eslint-plugin-import": "2.21.2",
+    "eslint-plugin-jest": "23.13.2",
+    "eslint-plugin-jsdoc": "26.0.2",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-react": "7.20.0",
+    "eslint-plugin-react-hooks": "^1.7.0",
+    "husky": "4.2.5",
+    "lint-staged": "10.2.7",
+    "prettier": "2.0.5",
+    "typescript": "~3.7.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npx lint-staged",
+      "pre-push:": "npm test"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,tsx,js,jsx}": [
+      "prettier --write",
+      "eslint --fix"
+    ]
+  },
+  "dependencies": {
+    "@types/styled-components": "^5.1.4",
+    "styled-components": "^5.2.1"
+  }
+}
